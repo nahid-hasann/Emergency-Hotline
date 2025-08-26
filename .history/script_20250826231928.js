@@ -1,0 +1,1 @@
+const heartIcon = document.querySelector('.')
