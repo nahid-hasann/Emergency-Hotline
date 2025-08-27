@@ -41,46 +41,12 @@ for (let i = 0; i < copyButtons.length; i++) {
     copyButtons[i].addEventListener("click", function () {
         const numberToCopy = this.closest(".card").querySelector(".mobile-number").innerText;
 
+        // Modern Clipboard API
         navigator.clipboard.writeText(numberToCopy).then(() => {
             let count = parseInt(copyCount.innerText);
             copyCount.innerText = count + 1;
-            alert("✅ Number copie: " + numberToCopy);
+            alert("✅ Number copied: " + numberToCopy);
         });
     });
 }
 
-// ** 4 
-
-const cardSection = document.querySelector('.card-section');
-const callHistoryContainer = document.querySelector('.call-history-section');
-
-cardSection.addEventListener('click', function(event) {
-      const target = event.target;
-
-      if(target.classList.contains('call-button') || target.closest('.call-button')){
-        const card = target.closest('.card');
-
-        const helplineName = card.querySelector('.helpline-name').innerText;
-        const mobileNumber = card.querySelector('.mobile-number').innerText;
-        const currentTime = new Date().toLocaleTimeString();
-
-        const newDiv = document.createElement('div');
-
-        newDiv.innerHTML = `
-
-                 <div class="flex justify-around mt-[20px] bg-[#fafafa] p-[10px] rounded-xl">
-                    <div>
-                    <h1>${helplineName}</h1>
-                    <p>${mobileNumber}</p>
-                 </div>
-                 <div class="flex justify-center items-center">
-                    <p>${currentTime}</p>
-                 </div>
-                 </div>
-
-        
-        `;
-        callHistoryContainer.appendChild(newDiv);
-      }
-
-});

@@ -57,11 +57,11 @@ const callHistoryContainer = document.querySelector('.call-history-section');
 cardSection.addEventListener('click', function(event) {
       const target = event.target;
 
-      if(target.classList.contains('call-button') || target.closest('.call-button')){
+      if(target.classList.contains('call-button') ){
         const card = target.closest('.card');
 
-        const helplineName = card.querySelector('.helpline-name').innerText;
-        const mobileNumber = card.querySelector('.mobile-number').innerText;
+        const helplineName = card.querySelector('helpline-name').innerText;
+        const mobileNumber = card.querySelector('mobile-number').innerText;
         const currentTime = new Date().toLocaleTimeString();
 
         const newDiv = document.createElement('div');
@@ -70,17 +70,16 @@ cardSection.addEventListener('click', function(event) {
 
                  <div class="flex justify-around mt-[20px] bg-[#fafafa] p-[10px] rounded-xl">
                     <div>
-                    <h1>${helplineName}</h1>
-                    <p>${mobileNumber}</p>
+                    <h1>Fire Service Number</h1>
+                    <p>999</p>
                  </div>
                  <div class="flex justify-center items-center">
-                    <p>${currentTime}</p>
+                    <p>date: 2: 48 pm </p>
                  </div>
                  </div>
 
         
-        `;
-        callHistoryContainer.appendChild(newDiv);
+        `
       }
 
 });

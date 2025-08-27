@@ -57,11 +57,11 @@ const callHistoryContainer = document.querySelector('.call-history-section');
 cardSection.addEventListener('click', function(event) {
       const target = event.target;
 
-      if(target.classList.contains('call-button') || target.closest('.call-button')){
+      if(target.classList.contains('call-button') ){
         const card = target.closest('.card');
 
-        const helplineName = card.querySelector('.helpline-name').innerText;
-        const mobileNumber = card.querySelector('.mobile-number').innerText;
+        const helplineName = card.querySelector('helpline-name').innerText;
+        const mobileNumber = card.querySelector('mobile-number').innerText;
         const currentTime = new Date().toLocaleTimeString();
 
         const newDiv = document.createElement('div');
