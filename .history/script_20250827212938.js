@@ -25,10 +25,10 @@ for(let i = 0; i < callButton.length; i++){
       if(coins > 0){
          coins = coins - 20;
          coinCount.innerText = coins;
-         alert('☎️ calling ' + helpLineNames.innerText  + " " +  mobileNumber.innerText )
+         alert('☎️ calling ' +  mobileNumber.innerText + )
       }
       else{
-        alert('You don’t have enough money. 😔');
+        alert('😰 sorry for that');
       }
     });
 }

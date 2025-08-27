@@ -28,7 +28,7 @@ for(let i = 0; i < callButton.length; i++){
          alert('☎️ calling ' + helpLineNames.innerText  + " " +  mobileNumber.innerText )
       }
       else{
-        alert('You don’t have enough money. 😔');
+        alert('😰 sorry for that');
       }
     });
 }

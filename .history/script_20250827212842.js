@@ -20,15 +20,15 @@ for(let i = 0; i < callButton.length; i++){
         let coins = parseInt(coinCount.innerText);
 
         const mobileNumber = this.closest('.card').querySelector('.mobile-number');
-        const helpLineNames = this.closest('.card').querySelector('.helpline-name');
+        const helpLineNames = this.clo
 
       if(coins > 0){
          coins = coins - 20;
          coinCount.innerText = coins;
-         alert('☎️ calling ' + helpLineNames.innerText  + " " +  mobileNumber.innerText )
+         alert('☎️ calling to ' + mobileNumber.innerText + " National Emergency ")
       }
       else{
-        alert('You don’t have enough money. 😔');
+        alert('😰 sorry for that');
       }
     });
 }
