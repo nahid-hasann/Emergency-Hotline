@@ -57,7 +57,6 @@ const callHistoryButoon = document.querySelector('.clear-button');
 
 cardSection.addEventListener('click', function(event) {
       const target = event.target;
-      const clearButton = document.getElementById('clear');
 
       if(target.classList.contains('call-button') || target.closest('.call-button')){
         const card = target.closest('.card');
@@ -84,15 +83,10 @@ cardSection.addEventListener('click', function(event) {
         `;
         callHistoryContainer.appendChild(newDiv);
       }
-      clearButton.addEventListener('click', function(){
-         newDiv.innerHTML = "";
-      })
 
 });
 
-// ** 5 
-
-const clearButton = document.getElementById('clear');
+const clearButton = document.getElementById('clear')
 const callHistorysection = document.querySelector('.call-history-section');
 
 clearButton.addEventListener('click', function(event){

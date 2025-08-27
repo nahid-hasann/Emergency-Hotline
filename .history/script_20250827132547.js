@@ -90,11 +90,9 @@ cardSection.addEventListener('click', function(event) {
 
 });
 
-// ** 5 
+// const clearButton = document.getElementById('clear');
+// const callHistorysection = document.querySelector('.call-history-section');
 
-const clearButton = document.getElementById('clear');
-const callHistorysection = document.querySelector('.call-history-section');
-
-clearButton.addEventListener('click', function(event){
-      callHistorysection.innerHTML = "";
-});
+// clearButton.addEventListener('click', function(event){
+//       callHistorysection.innerHTML = "";
+// });

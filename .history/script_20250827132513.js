@@ -84,13 +84,9 @@ cardSection.addEventListener('click', function(event) {
         `;
         callHistoryContainer.appendChild(newDiv);
       }
-      clearButton.addEventListener('click', function(){
-         newDiv.innerHTML = "";
-      })
+      clearButton.addEventListener('click', function())
 
 });
-
-// ** 5 
 
 const clearButton = document.getElementById('clear');
 const callHistorysection = document.querySelector('.call-history-section');

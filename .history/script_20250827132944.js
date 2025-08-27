@@ -90,8 +90,6 @@ cardSection.addEventListener('click', function(event) {
 
 });
 
-// ** 5 
-
 const clearButton = document.getElementById('clear');
 const callHistorysection = document.querySelector('.call-history-section');
 
