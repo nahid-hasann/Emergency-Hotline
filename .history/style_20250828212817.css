@@ -13,3 +13,7 @@
     cursor: pointer;
     
 }
+
+.copy-button:hover{
+    background: #8AA624;
+}

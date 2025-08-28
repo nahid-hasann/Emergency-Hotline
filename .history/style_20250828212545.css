@@ -6,10 +6,14 @@
     
     background: #8AA624;   
     transition: 0.5s;
-    color: red;
 }
 
 .copy-button{
     cursor: pointer;
     
+}
+
+.copy-button:hover{
+    background: grey;
+    font-size: ;
 }

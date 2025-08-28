@@ -1,0 +1,9 @@
+.call-button {
+    cursor: pointer;
+}
+
+.call-button:hover {
+    background-color: #26667F;
+    /* font-size: 18px; */
+    transition: 0.5s;
+}

@@ -1,0 +1,11 @@
+.call-button {
+    cursor: pointer;
+}
+
+.call-button:hover {
+    
+    back
+    background-color: #26667F;
+
+    transition: 0.5s;
+}

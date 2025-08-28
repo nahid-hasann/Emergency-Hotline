@@ -1,0 +1,11 @@
+.call-button {
+    cursor: pointer;
+}
+
+.call-button:hover {
+    
+    background: linear-gradient(to right, #26667F, #00a63e);
+    
+
+    transition: 0.5s;
+}
